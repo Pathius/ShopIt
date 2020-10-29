@@ -2,16 +2,19 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'ShopIt',
+    htmlAttrs: {
+      lang: 'en'
+    },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { vmid: 'description', name: 'description', content: 'ShopIt is light and fast front-end template for e-commerce platform.' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, minimal-ui, user-scalable=no' },
+      { name: 'robots', content: 'index, follow' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    noscript: [
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap' }
     ]
   },
-
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
   ],
@@ -37,7 +40,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    extend(config, ctx) {
+    extend (config, ctx) {
       if (ctx.isDev && ctx.isCleint) {
         config.module.rules.push({
           enforce: 'pre',
