@@ -20,8 +20,14 @@
     <ul class="header__icons">
       <li class="header__icon">
         <SearchIcon />
+      </li>
+      <li class="header__icon">
         <WishlistIcon />
+      </li>
+      <li class="header__icon">
         <CartIcon />
+      </li>
+      <li class="header__icon">
         <AccountIcon />
       </li>
     </ul>
