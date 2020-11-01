@@ -14,6 +14,7 @@ module.exports = {
   plugins: ['vue'],
   rules: {
     semi: [2, 'never'],
+    curly: ['error', 'multi-line'],
     'no-console': 'off',
     'vue/max-attributes-per-line': 'off'
   }
